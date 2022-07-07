@@ -1,4 +1,4 @@
-package com.mjini.baseproject
+package com.mjini.miniproject
 
 import org.junit.Test
 

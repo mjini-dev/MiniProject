@@ -1,7 +1,8 @@
-package com.mjini.baseproject
+package com.mjini.miniproject
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import com.mjini.baseproject.R
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
