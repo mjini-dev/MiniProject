@@ -10,9 +10,11 @@ buildscript {
     }
     dependencies {
         classpath 'com.github.dcendents:android-maven-gradle-plugin:2.1'
-        classpath 'com.android.tools.build:gradle:7.0.3'
+        classpath 'com.android.tools.build:gradle:7.0.4'
         classpath "com.google.dagger:hilt-android-gradle-plugin:$hilt_version"
         classpath 'com.google.gms:google-services:4.3.13'
+
+        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
     }
 }
 
@@ -23,7 +25,7 @@ task clean(type: Delete) {
 
 ext{
     minSdk_Version = 23
-    targetSdk_Version = 32
+    targetSdk_Version = 31
     version_Code= 1
     buildTools_Version = "1.0"
 }
