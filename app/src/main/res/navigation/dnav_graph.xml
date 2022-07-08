@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/dnav_graph"
+    app:startDestination="@id/inpuUserNameFragment">
+
+    <fragment
+        android:id="@+id/inpuUserNameFragment"
+        android:name="com.mjini.miniproject.main.InputUserNameFragment"
+        android:label="InpuUserNameFragment" >
+        <action
+            android:id="@+id/action_inpuUserNameFragment_to_userProfileFragment"
+            app:destination="@id/userProfileFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/userProfileFragment"
+        android:name="com.mjini.miniproject.profile.UserProfileFragment"
+        android:label="UserProfileFragment" />
+</navigation>
