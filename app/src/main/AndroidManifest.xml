@@ -2,6 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.mjini.baseproject">
 
+    <uses-permission android:name="android.permission.INTERNET" />
+
     <application
         android:allowBackup="true"
         android:name="com.mjini.miniproject.base.MiniProjectApplication"
@@ -11,7 +13,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.BaseProject">
         <activity
-            android:name="com.mjini.miniproject.MainActivity"
+            android:name="com.mjini.miniproject.main.MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
