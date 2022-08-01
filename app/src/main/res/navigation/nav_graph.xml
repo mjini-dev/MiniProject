@@ -1,19 +1,30 @@
 <?xml version="1.0" encoding="utf-8"?>
 <navigation xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:id="@+id/dnav_graph"
+    android:id="@+id/nav_graph"
+    xmlns:tools="http://schemas.android.com/tools"
     app:startDestination="@id/inpuUserNameFragment">
 
     <fragment
         android:id="@+id/inpuUserNameFragment"
         android:name="com.mjini.miniproject.main.InputUserNameFragment"
-        android:label="InpuUserNameFragment" >
+        android:label="InpuUserNameFragment"
+        tools:layout="@layout/input_user_name_fragment">
         <action
             android:id="@+id/action_inpuUserNameFragment_to_userProfileFragment"
-            app:destination="@id/userProfileFragment" />
+            app:destination="@id/userProfileFragment" >
+            <argument
+                android:name="userName"
+                app:argType="string" />
+        </action>
     </fragment>
     <fragment
         android:id="@+id/userProfileFragment"
         android:name="com.mjini.miniproject.profile.UserProfileFragment"
-        android:label="UserProfileFragment" />
+        android:label="UserProfileFragment"
+        tools:layout="@layout/user_profile_fragment">
+        <argument
+            android:name="userName"
+            app:argType="string" />
+    </fragment>
 </navigation>
